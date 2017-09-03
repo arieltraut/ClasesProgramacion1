@@ -22,7 +22,7 @@ int main()
 
     return 0;
 }
-/** \brief
+/** \brief divide dos numero flotantes
  *
  * \param
  * \param

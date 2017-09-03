@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1503579541 source:c:\users\alex\apps, drivers\ariel\utn\clasesprogramacion1\clase03\clase03_ej4\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1503614803 source:d:\clases\clasesprogramacion1\clase03\clase03_ej4\calculadora.c
+	"Calculadora.h"
+
+1503614804 d:\clases\clasesprogramacion1\clase03\clase03_ej4\calculadora.h
+
+1503622451 source:d:\clases\clasesprogramacion1\clase03\clase03_ej4\consola.c
+	<stdio.h>
+	<stdlib.h>
+
+1503623043 source:d:\clases\clasesprogramacion1\clase03\clase03_ej4\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Calculadora.h"
+	"Consola.h"
+
+1503621060 d:\clases\clasesprogramacion1\clase03\clase03_ej4\consola.h
+
+1503614803 source:d:\utn\clasesprogramacion1\clase04\clase03_ej4\calculadora.c
+	"Calculadora.h"
+
+1503614804 d:\utn\clasesprogramacion1\clase04\clase03_ej4\calculadora.h
+
+1503622451 source:d:\utn\clasesprogramacion1\clase04\clase03_ej4\consola.c
+	<stdio.h>
+	<stdlib.h>
+
+1503623043 source:d:\utn\clasesprogramacion1\clase04\clase03_ej4\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Calculadora.h"
+	"Consola.h"
+
+1503621060 d:\utn\clasesprogramacion1\clase04\clase03_ej4\consola.h
+
