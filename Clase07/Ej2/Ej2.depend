@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1504745024 source:d:\clases\clase06\ej2\datos.c
+	<stdio.h>
+	<stdlib.h>
+	"datos.h"
+
+1504745018 d:\clases\clase06\ej2\datos.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1504744848 source:d:\clases\clase06\ej2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"datos.h"
+
+1504811116 source:d:\utn\clasesprogramacion1\clase07\ej2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1505051742 source:k:\utn\clasesprogramacion1\clase07\ej2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

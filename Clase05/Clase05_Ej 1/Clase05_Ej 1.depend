@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1504134127 source:d:\clases\clasesprogramacion1\clase05\clase05_ej 1\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1504134996 source:d:\clases\clasesprogramacion1\clase05\clase05_ej 1\lib.c
+	"lib.h"
+
+1504134827 d:\clases\clasesprogramacion1\clase05\clase05_ej 1\lib.h
+

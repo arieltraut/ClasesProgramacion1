@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1505048249 source:k:\utn\clasesprogramacion1\clase06\ej03\ej03\funciones.c
+	"funciones.h"
+
+1505047521 source:k:\utn\clasesprogramacion1\clase06\ej03\ej03\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1505045921 k:\utn\clasesprogramacion1\clase06\ej03\ej03\funciones.h
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1503262768 source:c:\users\alex\apps, drivers\ariel\utn\clasesprogramacion1\clase03\clase03_ ej1\main.c
+	<stdio.h>
+	<stdlib.h>
+

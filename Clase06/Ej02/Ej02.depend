@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1504226156 source:d:\clases\ej02\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ordenar.h"
+
+1504225572 d:\clases\ej02\ordenar.h
+
+1504226374 source:d:\clases\ej02\ordenar.c
+	"ordenar.h"
+
+1504971003 source:k:\utn\clasesprogramacion1\clase06\ej02\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ordenar.h"
+
+1504225572 k:\utn\clasesprogramacion1\clase06\ej02\ordenar.h
+
+1504980014 source:k:\utn\clasesprogramacion1\clase06\ej02\ordenar.c
+	"ordenar.h"
+
+1504980014 source:f:\utn\clasesprogramacion1\clase06\ej02\ordenar.c
+	"ordenar.h"
+
+1504225572 f:\utn\clasesprogramacion1\clase06\ej02\ordenar.h
+
+1504982475 source:f:\utn\clasesprogramacion1\clase06\ej02\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ordenar.h"
+
