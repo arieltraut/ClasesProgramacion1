@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1507855949 source:c:\users\alumno\desktop\clase\ej2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"pixel.h"
+
+1507856491 c:\users\alumno\desktop\clase\ej2\pixel.h
+
+1507855929 source:c:\users\alumno\desktop\clase\ej2\pixel.c
+	"pixel.h"
+

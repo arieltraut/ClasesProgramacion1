@@ -1,0 +1,9 @@
+
+para punteros de estructura 
+para acceder a campos (se usa operador flecha)
+
+struct dato *ptr;
+
+ptr->campo 1 = 33; (*ptr).campo1 = 33;
+
+

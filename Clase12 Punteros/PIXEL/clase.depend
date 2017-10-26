@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1507856481 source:d:\clase\main.c
+	<stdio.h>
+	<stdlib.h>
+	"pixel.h"
+
+1507856471 d:\clase\pixel.h
+
+1507856422 source:d:\clase\pixel.c
+	<stdio.h>
+	<stdlib.h>
+	"pixel.h"
+
+1507857220 source:f:\utn\clasesprogramacion1\clase12 punteros\pixel\pixel.c
+	<stdio.h>
+	<stdlib.h>
+	"pixel.h"
+
+1507856471 f:\utn\clasesprogramacion1\clase12 punteros\pixel\pixel.h
+

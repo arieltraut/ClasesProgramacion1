@@ -1,0 +1,9 @@
+fprintf
+fijarse q no es NULL
+apen
+
+encabezado (hardcodeado)
+
+for fprintf
+
+pie (hardcodeado)

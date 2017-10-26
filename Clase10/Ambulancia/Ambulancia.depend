@@ -1,0 +1,168 @@
+# depslib dependency file v1.0
+1505950511 source:e:\utn\clasesprogramacion1\clase10\ambulancia final\ambulancia\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"asociados.h"
+	"validar.h"
+
+1505954171 e:\utn\clasesprogramacion1\clase10\ambulancia final\ambulancia\asociados.h
+
+1505952608 e:\utn\clasesprogramacion1\clase10\ambulancia final\ambulancia\validar.h
+
+1505952609 source:e:\utn\clasesprogramacion1\clase10\ambulancia final\ambulancia\validar.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"validar.h"
+
+1505953893 source:e:\utn\clasesprogramacion1\clase10\ambulancia final\ambulancia\asociados.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"asociados.h"
+	"validar.h"
+
+1505953894 source:d:\clases\clase10\ambulancia final\ambulancia\asociados.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"asociados.h"
+	"validar.h"
+
+1505954172 d:\clases\clase10\ambulancia final\ambulancia\asociados.h
+
+1506550995 d:\clases\clase10\ambulancia final\ambulancia\validar.h
+
+1506550995 source:d:\clases\clase10\ambulancia final\ambulancia\validar.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"validar.h"
+
+1506551430 source:d:\clases\clase10\ambulancia final\ambulancia\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"asociados.h"
+	"validar.h"
+
+1506620253 source:f:\utn\clasesprogramacion1\clase10\ambulancia\asociados.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"asociados.h"
+	"validar.h"
+
+1506615859 f:\utn\clasesprogramacion1\clase10\ambulancia\asociados.h
+
+1506614566 f:\utn\clasesprogramacion1\clase10\ambulancia\validar.h
+
+1506615859 source:f:\utn\clasesprogramacion1\clase10\ambulancia\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"asociados.h"
+	"validar.h"
+
+1506615859 source:f:\utn\clasesprogramacion1\clase10\ambulancia\validar.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"validar.h"
+
+1507136129 source:e:\utn\clasesprogramacion1\clase10\ambulancia\asociados.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"asociados.h"
+	"validar.h"
+
+1507135891 e:\utn\clasesprogramacion1\clase10\ambulancia\asociados.h
+
+1506614566 e:\utn\clasesprogramacion1\clase10\ambulancia\validar.h
+
+1507144675 source:e:\utn\clasesprogramacion1\clase10\ambulancia\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"asociados.h"
+	"llamada.h"
+	"validar.h"
+
+1506615859 source:e:\utn\clasesprogramacion1\clase10\ambulancia\validar.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"validar.h"
+
+1507144675 source:d:\utn\clasesprogramacion1\clase10\ambulancia\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"asociados.h"
+	"llamada.h"
+	"validar.h"
+
+1507135891 d:\utn\clasesprogramacion1\clase10\ambulancia\asociados.h
+
+1506614566 d:\utn\clasesprogramacion1\clase10\ambulancia\validar.h
+
+1506615859 source:d:\utn\clasesprogramacion1\clase10\ambulancia\validar.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"validar.h"
+
+1507136129 source:d:\utn\clasesprogramacion1\clase10\ambulancia\asociados.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"asociados.h"
+	"validar.h"
+
+1507144019 source:d:\utn\clasesprogramacion1\clase10\ambulancia\llamada.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"llamada.h"
+	"validar.h"
+
+1507144675 d:\utn\clasesprogramacion1\clase10\ambulancia\llamada.h
+
+1507144732 source:e:\utn\clasesprogramacion1\clase10\ambulancia\llamada.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"llamada.h"
+	"validar.h"
+
+1507144675 e:\utn\clasesprogramacion1\clase10\ambulancia\llamada.h
+
+1507144732 source:l:\utn\clasesprogramacion1\clase10\ambulancia\llamada.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"llamada.h"
+	"validar.h"
+
+1507144675 l:\utn\clasesprogramacion1\clase10\ambulancia\llamada.h
+
+1506614566 l:\utn\clasesprogramacion1\clase10\ambulancia\validar.h
+
+1507144675 source:l:\utn\clasesprogramacion1\clase10\ambulancia\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"asociados.h"
+	"llamada.h"
+	"validar.h"
+
+1507135891 l:\utn\clasesprogramacion1\clase10\ambulancia\asociados.h
+
+1507144934 source:l:\utn\clasesprogramacion1\clase10\ambulancia\validar.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"validar.h"
+

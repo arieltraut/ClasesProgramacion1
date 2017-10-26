@@ -1,0 +1,60 @@
+asociado (estructura)
+nombre
+apellido
+edad
+dni
+ID asociado *
+flag libre
+
+
+
+
+llamada  (estructura)
+ID llamada
+ID asociado * mas llamadas contador asoc
+motivo * contador motivo, buscar mas recurrente
+ID ambulancia
+tiempo insumido lo declara el operador
+estado *completo cuando llama a ambulancia
+flag libre
+
+
+promedio tiempo dividido cantidada para cada motivo
+
+(no esta pedido, pide solo baja) solo dar de baja de asociados que nunca llamaron para no perder el historial de los que llamaron
+
+
+recorrer el array y tres contadores para motivos
+hacer array de 3 elementos
+
+posicion 0 = max
+motivo es igual al maximo
+motivo es igual al maximo
+
+array usuarios
+posicion 33 incrementar en 1
+
+
+
+2 arrays 
+
+
+void imprimirTodo(Entidad1 arrayEntidad1[], int lenEntidad1, Entidad2 arrayEntidad2[], int lenEntidad2)
+{
+    int indexE2;
+    for(i=0;indexE2<lenEntidad2;i++)
+    {
+        if (arrayEntidad2[indexE2].flagOcupado ==1)
+        {
+            int idE1 = arrayEntidad2[indexE2].idEntidad1;
+
+            int indexE1 = ent1_buscarIndicePorId(arrayEntidad1,lenEntidad1,idE1);
+
+            printf("%d\t%s | %d\t%s",arrayEntidad1[indexE1].id,
+                                     arrayEntidad1[indexE1].a,
+                                     arrayEntidad2[indexE2].id,
+                                     arrayEntidad2[indexE2].a);
+        }
+    }
+}
+
