@@ -1,0 +1,173 @@
+# depslib dependency file v1.0
+1509668215 source:d:\clases\gimnasio\gimnasio\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"socios.h"
+
+1509669672 d:\clases\gimnasio\gimnasio\arraylist.h
+
+1509669672 d:\clases\gimnasio\gimnasio\socios.h
+
+1509669672 source:d:\clases\gimnasio\gimnasio\interfaz.c
+
+1509682302 source:c:\users\alex\desktop\gimnasio\gimnasio\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"socios.h"
+
+1509682302 c:\users\alex\desktop\gimnasio\gimnasio\arraylist.h
+
+1509938888 c:\users\alex\desktop\gimnasio\gimnasio\socios.h
+
+1509939566 source:c:\users\alex\desktop\gimnasio\gimnasio\socios.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"socios.h"
+
+1509939501 source:c:\users\alex\desktop\gimnasio\gimnasio\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"interfaz.h"
+	"socios.h"
+	"validar.h"
+	"ArrayList.h"
+
+1509939361 c:\users\alex\desktop\gimnasio\gimnasio\interfaz.h
+
+1509939422 source:c:\users\alex\desktop\gimnasio\gimnasio\interfaz.c
+	<stdio.h>
+	<stdlib.h>
+	"interfaz.h"
+	"validar.h"
+	"socios.h"
+	"ArrayList.h"
+	"controller.h"
+
+1509938071 source:c:\users\alex\desktop\gimnasio\gimnasio\main.c
+	<stdio.h>
+	<stdlib.h>
+	"controller.h"
+
+1509937837 c:\users\alex\desktop\gimnasio\gimnasio\controller.h
+	"interfaz.h"
+	"socios.h"
+	"validar.h"
+	"ArrayList.h"
+
+1509920890 c:\users\alex\desktop\gimnasio\gimnasio\validar.h
+
+1509920890 source:c:\users\alex\desktop\gimnasio\gimnasio\validar.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"validar.h"
+
+1510078108 source:c:\users\ari\desktop\clasesprogramacion1-master\clase15\gimnasio\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"socios.h"
+
+1510078108 c:\users\ari\desktop\clasesprogramacion1-master\clase15\gimnasio\arraylist.h
+
+1510078108 c:\users\ari\desktop\clasesprogramacion1-master\clase15\gimnasio\socios.h
+
+1510078248 source:c:\users\ari\desktop\clasesprogramacion1-master\clase15\gimnasio\interfaz.c
+	<stdio.h>
+	<stdlib.h>
+	"interfaz.h"
+
+1510078228 c:\users\ari\desktop\clasesprogramacion1-master\clase15\gimnasio\interfaz.h
+	"ArrayList.h"
+	"socios.h"
+	"validar.h"
+	"controller.h"
+
+1509988226 c:\users\ari\desktop\clasesprogramacion1-master\clase15\gimnasio\validar.h
+
+1510078108 c:\users\ari\desktop\clasesprogramacion1-master\clase15\gimnasio\controller.h
+	"socios.h"
+	"ArrayList.h"
+
+1509988694 source:c:\users\ari\desktop\clasesprogramacion1-master\clase15\gimnasio\main.c
+	<stdio.h>
+	<stdlib.h>
+	"interfaz.h"
+
+1509991648 source:c:\users\ari\desktop\clasesprogramacion1-master\clase15\gimnasio\validar.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"validar.h"
+
+1510078108 source:c:\users\ari\desktop\clasesprogramacion1-master\clase15\gimnasio\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"controller.h"
+
+1509995243 source:c:\users\ari\desktop\clasesprogramacion1-master\clase15\gimnasio\socios.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"socios.h"
+
+1510154385 source:c:\users\orozco pc\desktop\gimnasio\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"socios.h"
+
+1510078110 c:\users\orozco pc\desktop\gimnasio\arraylist.h
+
+1510162561 c:\users\orozco pc\desktop\gimnasio\socios.h
+
+1510168695 source:c:\users\orozco pc\desktop\gimnasio\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"controller.h"
+
+1510168761 c:\users\orozco pc\desktop\gimnasio\controller.h
+	"socios.h"
+	"ArrayList.h"
+
+1510168804 source:c:\users\orozco pc\desktop\gimnasio\interfaz.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"interfaz.h"
+
+1510168008 c:\users\orozco pc\desktop\gimnasio\interfaz.h
+	"ArrayList.h"
+	"socios.h"
+	"validar.h"
+	"controller.h"
+
+1509988228 c:\users\orozco pc\desktop\gimnasio\validar.h
+
+1509988696 source:c:\users\orozco pc\desktop\gimnasio\main.c
+	<stdio.h>
+	<stdlib.h>
+	"interfaz.h"
+
+1510168008 source:c:\users\orozco pc\desktop\gimnasio\socios.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"socios.h"
+
+1509991650 source:c:\users\orozco pc\desktop\gimnasio\validar.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"validar.h"
+
