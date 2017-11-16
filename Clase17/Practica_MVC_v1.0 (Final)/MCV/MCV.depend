@@ -1,0 +1,65 @@
+# depslib dependency file v1.0
+1510859219 source:c:\users\ari\desktop\clasesprogramacion1\clase17\practica_mvc_v1.0 (final)\mcv\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Socio.h"
+
+1510858335 c:\users\ari\desktop\clasesprogramacion1\clase17\practica_mvc_v1.0 (final)\mcv\arraylist.h
+
+1510858320 c:\users\ari\desktop\clasesprogramacion1\clase17\practica_mvc_v1.0 (final)\mcv\socio.h
+	"ArrayList.h"
+
+1510858320 source:c:\users\ari\desktop\clasesprogramacion1\clase17\practica_mvc_v1.0 (final)\mcv\controlador.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Socio.h"
+	"Vista.h"
+	"DataManager.h"
+
+1510858320 c:\users\ari\desktop\clasesprogramacion1\clase17\practica_mvc_v1.0 (final)\mcv\vista.h
+
+1510859381 c:\users\ari\desktop\clasesprogramacion1\clase17\practica_mvc_v1.0 (final)\mcv\datamanager.h
+
+1510858320 source:c:\users\ari\desktop\clasesprogramacion1\clase17\practica_mvc_v1.0 (final)\mcv\datamanager.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"Socio.h"
+	"DataManager.h"
+
+1510858320 source:c:\users\ari\desktop\clasesprogramacion1\clase17\practica_mvc_v1.0 (final)\mcv\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Controlador.h"
+
+1510858320 c:\users\ari\desktop\clasesprogramacion1\clase17\practica_mvc_v1.0 (final)\mcv\controlador.h
+
+1510858320 source:c:\users\ari\desktop\clasesprogramacion1\clase17\practica_mvc_v1.0 (final)\mcv\socio.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Socio.h"
+
+1510858320 source:c:\users\ari\desktop\clasesprogramacion1\clase17\practica_mvc_v1.0 (final)\mcv\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Validaciones.h"
+
+1510858320 c:\users\ari\desktop\clasesprogramacion1\clase17\practica_mvc_v1.0 (final)\mcv\validaciones.h
+
+1510858320 source:c:\users\ari\desktop\clasesprogramacion1\clase17\practica_mvc_v1.0 (final)\mcv\vista.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Validaciones.h"
+	"Socio.h"
+	"ArrayList.h"
+	"Vista.h"
+	"Controlador.h"
+
