@@ -1,0 +1,69 @@
+# depslib dependency file v1.0
+1511407552 source:d:\clases\parcial\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Empleado.h"
+
+1511397940 d:\clases\parcial\arraylist.h
+
+1511465011 d:\clases\parcial\empleado.h
+	"ArrayList.h"
+
+1511465283 source:d:\clases\parcial\empleado.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Empleado.h"
+
+1511465091 source:d:\clases\parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Empleado.h"
+	"Validaciones.h"
+
+1511464224 source:d:\clases\parcial\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"validaciones.h"
+
+1511464239 d:\clases\parcial\validaciones.h
+
+1511407552 source:g:\clases\parcial\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Empleado.h"
+
+1511397940 g:\clases\parcial\arraylist.h
+
+1511398973 g:\clases\parcial\empleado.h
+	"ArrayList.h"
+
+1511399620 source:g:\clases\parcial\empleado.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Empleado.h"
+
+1511409071 source:g:\clases\parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"Empleado.h"
+
+1511389524 source:g:\clases\parcial\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"validaciones.h"
+
+1511387896 g:\clases\parcial\validaciones.h
+
