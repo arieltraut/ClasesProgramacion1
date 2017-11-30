@@ -439,3 +439,186 @@
 	"Vista.h"
 	"Controlador.h"
 
+1512003774 source:e:\utn\clases\final_tn_lab_i_a2016_c2 (practica)\mcv\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Cliente.h"
+
+1511359676 e:\utn\clases\final_tn_lab_i_a2016_c2 (practica)\mcv\arraylist.h
+
+1512003701 source:e:\utn\clases\final_tn_lab_i_a2016_c2 (practica)\mcv\datamanager.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"Cliente.h"
+	"Servicios.h"
+	"RelSocioServicio.h"
+	"DataManager.h"
+	"Validaciones.h"
+
+1510891802 e:\utn\clases\final_tn_lab_i_a2016_c2 (practica)\mcv\servicios.h
+
+1511381368 e:\utn\clases\final_tn_lab_i_a2016_c2 (practica)\mcv\relsocioservicio.h
+
+1512003042 e:\utn\clases\final_tn_lab_i_a2016_c2 (practica)\mcv\datamanager.h
+
+1511983939 e:\utn\clases\final_tn_lab_i_a2016_c2 (practica)\mcv\validaciones.h
+
+1510891798 source:e:\utn\clases\final_tn_lab_i_a2016_c2 (practica)\mcv\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Controlador.h"
+
+1512002640 e:\utn\clases\final_tn_lab_i_a2016_c2 (practica)\mcv\controlador.h
+
+1511381368 source:e:\utn\clases\final_tn_lab_i_a2016_c2 (practica)\mcv\relsocioservicio.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"RelSocioServicio.h"
+
+1511411498 source:e:\utn\clases\final_tn_lab_i_a2016_c2 (practica)\mcv\servicios.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Servicios.h"
+
+1511984013 source:e:\utn\clases\final_tn_lab_i_a2016_c2 (practica)\mcv\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Validaciones.h"
+
+1512002323 source:e:\utn\clases\final_tn_lab_i_a2016_c2 (practica)\mcv\cliente.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Cliente.h"
+
+1512002323 e:\utn\clases\final_tn_lab_i_a2016_c2 (practica)\mcv\cliente.h
+	"ArrayList.h"
+
+1512003701 source:e:\utn\clases\final_tn_lab_i_a2016_c2 (practica)\mcv\controlador.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Cliente.h"
+	"Servicios.h"
+	"Vista.h"
+	"DataManager.h"
+
+1512002596 e:\utn\clases\final_tn_lab_i_a2016_c2 (practica)\mcv\vista.h
+
+1512002788 source:e:\utn\clases\final_tn_lab_i_a2016_c2 (practica)\mcv\vista.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Validaciones.h"
+	"Cliente.h"
+	"Servicios.h"
+	"ArrayList.h"
+	"Vista.h"
+	"Controlador.h"
+
+1512003774 source:d:\utn\clases\practica final_tn_lab_i_a2016_c2\mcv\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Cliente.h"
+
+1511359676 d:\utn\clases\practica final_tn_lab_i_a2016_c2\mcv\arraylist.h
+
+1512002323 d:\utn\clases\practica final_tn_lab_i_a2016_c2\mcv\cliente.h
+	"ArrayList.h"
+
+1512002323 source:d:\utn\clases\practica final_tn_lab_i_a2016_c2\mcv\cliente.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Cliente.h"
+
+1512068956 source:d:\utn\clases\practica final_tn_lab_i_a2016_c2\mcv\controlador.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Cliente.h"
+	"Alquiler.h"
+	"Vista.h"
+	"DataManager.h"
+
+1510891802 d:\utn\clases\practica final_tn_lab_i_a2016_c2\mcv\servicios.h
+
+1512069234 d:\utn\clases\practica final_tn_lab_i_a2016_c2\mcv\vista.h
+
+1512068264 d:\utn\clases\practica final_tn_lab_i_a2016_c2\mcv\datamanager.h
+
+1512068028 source:d:\utn\clases\practica final_tn_lab_i_a2016_c2\mcv\datamanager.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"Cliente.h"
+	"Alquiler.h"
+	"DataManager.h"
+	"Validaciones.h"
+
+1511381368 d:\utn\clases\practica final_tn_lab_i_a2016_c2\mcv\relsocioservicio.h
+
+1511983939 d:\utn\clases\practica final_tn_lab_i_a2016_c2\mcv\validaciones.h
+
+1510891798 source:d:\utn\clases\practica final_tn_lab_i_a2016_c2\mcv\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Controlador.h"
+
+1512068896 d:\utn\clases\practica final_tn_lab_i_a2016_c2\mcv\controlador.h
+
+1511381368 source:d:\utn\clases\practica final_tn_lab_i_a2016_c2\mcv\relsocioservicio.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"RelSocioServicio.h"
+
+1511411498 source:d:\utn\clases\practica final_tn_lab_i_a2016_c2\mcv\servicios.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Servicios.h"
+
+1511984013 source:d:\utn\clases\practica final_tn_lab_i_a2016_c2\mcv\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Validaciones.h"
+
+1512068896 source:d:\utn\clases\practica final_tn_lab_i_a2016_c2\mcv\vista.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Validaciones.h"
+	"Cliente.h"
+	"Alquiler.h"
+	"ArrayList.h"
+	"Vista.h"
+	"Controlador.h"
+
+1512066716 source:d:\utn\clases\practica final_tn_lab_i_a2016_c2\mcv\alquiler.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Alquiler.h"
+
+1512065826 d:\utn\clases\practica final_tn_lab_i_a2016_c2\mcv\alquiler.h
+	"ArrayList.h"
+

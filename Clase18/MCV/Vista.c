@@ -33,13 +33,13 @@ int vista_init (int idioma)
 
 int vista_mostrarMenu()
 {
-    char buffer[10];
+    int buffer;
     int option=0;
 
     while(option != 12)
     {
-        val_getInt(buffer, MENU_PPAL_ES, MENU_PPAL_ERROR_ES,2,5);
-        option = atoi(buffer);
+        val_getUnsignedInt(&buffer, MENU_PPAL_ES, MENU_PPAL_ERROR_ES,2,1,11);
+        option = buffer;
 
         switch(option)
         {
@@ -108,11 +108,11 @@ static void opcionAlta()
     char auxApellido[50];
     char auxDni[50];
 
-    if(val_getString(auxNombre, "Nombre? ", "Error",2,50)==0)
+    if(val_getString(auxNombre, "Nombre?\n", "Error\n",2,50)==0)
     {
-        if(val_getString(auxApellido, "Apellido? ", "Error",2,50)==0)
+        if(val_getString(auxApellido, "Apellido?\n ", "Error\n",2,50)==0)
         {
-            if(val_getInt(auxDni, "DNI? ", "Error",2,50)==0)
+            if(val_getDni(auxDni, "DNI?\n ", "Error\n",2,50)==0)
             {
                 cont_altaSocio(auxNombre,auxApellido,auxDni);
             }
@@ -122,19 +122,17 @@ static void opcionAlta()
 
 static void opcionBaja()
 {
-    char auxId[10];
-    int id;
+    int auxId;
 
-    if((val_getUnsignedInt(auxId,"Id a dar de baja" , "Error",2,10)==0))
+    if((val_getUnsignedInt(&auxId,"Id a dar de baja\n" , "Error\n",2,0,99999)==0))
     {
-        id = atoi(auxId);
-        if(cont_existeSocio(id)!=0)
+        if(cont_existeSocio(auxId)!=0)
         {
-            printf("El ID no existe");
+            printf("El ID no existe\n");
         }
         else
         {
-            cont_bajaSocio(id);
+            cont_bajaSocio(auxId);
         }
     }
 
@@ -142,35 +140,31 @@ static void opcionBaja()
 
 static void opcionModificacion()
 {
-    char auxId[10];
-    int id;
-    int estado;
+    int auxId;
+    int auxEstado;
     char auxNombre[50];
     char auxApellido[50];
     char auxDni[50];
-    char auxEstado[5];
 
-    if((val_getUnsignedInt(auxId,"Id a modificar" , "Error",2,10)==0))
+    if((val_getUnsignedInt(&auxId,"Id a modificar\n" , "Error\n",2,0,99999)==0))
     {
-        id = atoi(auxId);
-        if(cont_existeSocio(id)!=0)
+        if(cont_existeSocio(auxId)!=0)
         {
             printf("El ID no existe");
         }
         else
         {
-            if(val_getString(auxNombre, "Nombre? ", "Error",2,50)==0)
+            if(val_getString(auxNombre, "Nombre\n? ", "Error\n",2,50)==0)
             {
-                if(val_getString(auxApellido, "Apellido? ", "Error",2,50)==0)
+                if(val_getString(auxApellido, "Apellido?\n", "Error\n",2,50)==0)
                 {
-                    if(val_getInt(auxDni, "DNI? ", "Error",2,50)==0)
+                    if(val_getDni(auxDni, "DNI?\n", "Error\n",2,50)==0)
                     {
-                        if(val_getUnsignedInt(auxEstado,"Estado?\nACTIVO= 0\nINACTIVO= 1", "Error",2,5)==0)
+                        if(val_getUnsignedInt(&auxEstado,"Estado?\nACTIVO= 0\nINACTIVO= 1", "Error",2,0,1)==0)
                         {
-                            estado=atoi(auxEstado);
-                            if(estado == 0 || estado == 1)
+                            if(auxEstado == 0 || auxEstado == 1)
                             {
-                                cont_modificarSocio(auxNombre,auxApellido,auxDni,id,estado);
+                                cont_modificarSocio(auxNombre,auxApellido,auxDni,auxId,auxEstado);
                             }
                         }
                     }
@@ -201,19 +195,17 @@ static void opcionAltaServicios()
 
 static void opcionBajaServicios()
 {
-    char auxId[10];
-    int id;
+    int auxId;
 
-    if((val_getUnsignedInt(auxId,"Id a dar de baja" , "Error",2,10)==0))
+    if((val_getUnsignedInt(&auxId,"Id a dar de baja" , "Error",2,0,99999)==0))
     {
-        id = atoi(auxId);
-        if(cont_existeServicio(id)!=0)
+        if(cont_existeServicio(auxId)!=0)
         {
             printf("El ID de servicio no existe");
         }
         else
         {
-            cont_bajaServicio(id);
+            cont_bajaServicio(auxId);
         }
     }
 }
@@ -221,16 +213,13 @@ static void opcionBajaServicios()
 static void opcionModificacionServicios()
 
 {
-    char auxId[10];
-    int id;
-    int estado;
+    int auxId;
+    int auxEstado;
     char auxDescripcion[50];
-    char auxEstado[5];
 
-    if((val_getUnsignedInt(auxId,"Id a modificar", "Error",2,10)==0))
+    if((val_getUnsignedInt(&auxId,"Id a modificar", "Error",2,0,99999)==0))
     {
-        id = atoi(auxId);
-        if(cont_existeServicio(id)!=0)
+        if(cont_existeServicio(auxId)!=0)
         {
             printf("El ID de servicio no existe");
         }
@@ -238,12 +227,11 @@ static void opcionModificacionServicios()
         {
             if(val_getString(auxDescripcion, "Descripcion? ", "Error",2,50)==0)
             {
-                if(val_getInt(auxEstado,"Estado?\nACTIVO= 0\nINACTIVO= 1", "Error",2,5)==0)
+                if(val_getUnsignedInt(&auxEstado,"Estado?\nACTIVO= 0\nINACTIVO= 1", "Error",2,0,1)==0)
                 {
-                    estado=atoi(auxEstado);
-                    if(estado == 0 || estado == 1)
+                    if(auxEstado == 0 || auxEstado == 1)
                     {
-                        cont_modificarServicios(auxDescripcion,id,estado);
+                        cont_modificarServicios(auxDescripcion,auxId,auxEstado);
                     }
                 }
             }
@@ -278,27 +266,51 @@ static void opcionListadoServicios()
 
 static void opcionAltaRelSocioServicio()
 {
-    char auxIdSocio[10];
-    char auxIdServicio[10];
+    int auxIdSocio;
+    int auxIdServicio;
 
-    if(val_getInt(auxIdSocio, "Socio? ", "Error",2,50)==0)
+    val_getUnsignedInt(&auxIdSocio,"ID Socio?\n", "Error\n",2,0,99999);
+    if(cont_existeSocio(auxIdSocio)!=-1)
     {
-        if(val_getInt(auxIdServicio, "Servicio? ", "Error",2,50)==0)
+        val_getUnsignedInt(&auxIdServicio, "Servicio? ", "Error",2,0,99999);
+        if(cont_existeServicio(auxIdServicio)!=-1)
         {
-            cont_altaRelacionSocioServicio(atoi(auxIdSocio),atoi(auxIdServicio));
+            if(cont_existeRelSocioServicioRepetida(auxIdSocio,auxIdServicio)!=0)
+            {
+                cont_altaRelSocioServicio(auxIdSocio,auxIdServicio);
+            }
+            else
+            {
+                printf("\nEl socio ya se encuentra asociado a este servicio.\n");
+            }
         }
+        else
+        {
+            printf("\nEl servicio no existe o ha sido dado de baja.\n");
+        }
+    }
+    else
+    {
+        printf("\nEl socio no existe o ha sido dado de baja.\n");
     }
 }
 
 static void opcionBajaRelSocioServicio()
-{
-    char auxId[10];
-    int id;
 
-    if((val_getUnsignedInt(auxId,"Id a dar de baja" , "Error",2,10)==0))
+{
+    int auxId;
+
+    if((val_getUnsignedInt(&auxId,"Id a dar de baja", "Error",2,0,99999)==0))
     {
-        id = atoi(auxId);
-        cont_bajaServicio(id);
+        if(cont_existeRelSocioServicio(auxId) != -1)
+        {
+            cont_bajaRelSocioServicio(auxId);
+            printf("\nBaja exitosa\n");
+        }
+        else
+        {
+            printf("\nLa relacion no existe o ha sido dado de baja\n");
+        }
     }
 }
 
@@ -319,7 +331,7 @@ void vista_mostrarRelacionSocioServicio(ArrayList* pListaRelSyS)
 
 static void opcionListadoRelSocioServicio()
 {
-    cont_listarRelacionSocioServicio();
+    cont_listarRelSocioServicio();
 }
 
 

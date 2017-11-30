@@ -27,9 +27,13 @@ int cont_listarServicios ();
 
 //********************RELACION SOCIO - SERVICIO
 
-int cont_altaRelacionSocioServicio (int idSocio, int idServicio);
+int cont_altaRelSocioServicio (int idSocio, int idServicio);
 
-int cont_bajaRelacionSocioServicio (int id);
+int cont_bajaRelSocioServicio (int id);
 
-int cont_listarRelacionSocioServicio ();
+int cont_existeRelSocioServicio (int id);
+
+int cont_existeRelSocioServicioRepetida (int idSocio,int idServicio);
+
+int cont_listarRelSocioServicio ();
 

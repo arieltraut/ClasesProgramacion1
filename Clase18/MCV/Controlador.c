@@ -9,26 +9,30 @@
 #include "DataManager.h"
 
 static ArrayList* nominaSocios;
-static ArrayList* listaServicios;
-static ArrayList* listaRelSyS;
+static ArrayList* nominaServicios;
+static ArrayList* nominaRelSyS;
+
 static int proximoIdSocio=0;
-static int proximoIdServicios=0;
-static int proximoIdRelSyS=0;
 static int getNewIdSocio();
-static int getNewIdServicios();
-static int getNewIdRelSyS();
 static int setNewIdSocio(int id);
+
+static int proximoIdServicios=0;
+static int getNewIdServicios();
 static int setNewIdServicios(int id);
+
+static int proximoIdRelSyS=0;
+static int getNewIdRelSyS();
 static int setNewIdRelSyS(int id);
+
 
 void cont_init()
 {
     nominaSocios = al_newArrayList();
-    listaServicios = al_newArrayList();
-    listaRelSyS = al_newArrayList();
+    nominaServicios = al_newArrayList();
+    nominaRelSyS = al_newArrayList();
     setNewIdSocio(dm_readAll(nominaSocios) + 1);
-    setNewIdServicios(dm_readAllServicios(listaServicios) + 1);
-    setNewIdRelSyS(dm_readAllRelSocioServicio(listaRelSyS) + 1);
+    setNewIdServicios(dm_readAllServicios(nominaServicios) + 1);
+    setNewIdRelSyS(dm_readAllRelSocioServicio(nominaRelSyS) + 1);
     vista_init(VISTA_IDIOMA_ES);
     vista_mostrarMenu();
 }
@@ -54,7 +58,6 @@ int cont_bajaSocio (int id)
 
     return 0;
 }
-
 
 int cont_modificarSocio (char* nombre,char* apellido,char* dni, int id, int estado)
 {
@@ -110,19 +113,19 @@ int cont_altaServicio (char* descripcion)
 {
     Servicios* auxServicios;
     auxServicios = serv_new(descripcion,getNewIdServicios(),SERVICIOS_ESTADO_ACTIVO);
-    al_add(listaServicios,auxServicios);
-    dm_saveAllServicios(listaServicios);
+    al_add(nominaServicios,auxServicios);
+    dm_saveAllServicios(nominaServicios);
     return 0;
 }
 
 int cont_bajaServicio (int id)
 {
     Servicios* auxServicios;
-    auxServicios=serv_findById(listaServicios,id);
+    auxServicios=serv_findById(nominaServicios,id);
     if(auxServicios!=NULL)
     {
         serv_setEstado(auxServicios,SERVICIOS_ESTADO_INACTIVO);
-        dm_saveAllServicios(listaServicios);
+        dm_saveAllServicios(nominaServicios);
     }
 
     return 0;
@@ -133,13 +136,13 @@ int cont_modificarServicios (char* descripcion, int id, int estado)
 {
     Servicios* auxServicios;
 
-    auxServicios=serv_findById(listaServicios,id);
+    auxServicios=serv_findById(nominaServicios,id);
 
     if(auxServicios!=NULL)
     {
         serv_setDescripcion(auxServicios,descripcion);
         serv_setEstado(auxServicios,estado);
-        dm_saveAllServicios(listaServicios);
+        dm_saveAllServicios(nominaServicios);
     }
 
     return 0;
@@ -148,14 +151,14 @@ int cont_modificarServicios (char* descripcion, int id, int estado)
 
 int cont_listarServicios ()
 {
-    vista_mostrarServicios(listaServicios);
+    vista_mostrarServicios(nominaServicios);
     return 0;
 }
 
 int cont_existeServicio (int id)
 {
     int retorno = -1;
-    Servicios* auxServicio = serv_findById(listaServicios,id);
+    Servicios* auxServicio = serv_findById(nominaServicios,id);
 
     if (auxServicio != NULL && serv_getEstado(auxServicio) == SERVICIOS_ESTADO_ACTIVO)
     {
@@ -177,49 +180,68 @@ static int setNewIdServicios(int id)
 
 //***************************RELACION SOCIO SERVICIO*************
 
-int cont_altaRelacionSocioServicio (int idSocio, int idServicio)
+int cont_altaRelSocioServicio (int idSocio, int idServicio)
 {
-
-        int retorno = -1;
-        RelSocioServicio* auxRelSocioServicio;// = relSyS_findByIdSocioAndIdServicio(listaRelSyS,idSocio,idServicio);
-
-        if(auxRelSocioServicio == NULL && cont_existeSocio(idSocio) == 0 && cont_existeServicio(idServicio) == 0)
-        {
-
-            auxRelSocioServicio = relSyS_new(getNewIdRelSyS(),idSocio,idServicio,REL_SOCIO_SERVICIO_ESTADO_ACTIVO);
-            al_add(listaRelSyS,auxRelSocioServicio);
-            dm_saveAllRelSocioServicio(listaRelSyS);
-            retorno = 0;
-        }
-        return retorno;
-
-
-    /*
+    int retorno = -1;
     RelSocioServicio* auxRelSocioServicio;
-    auxRelSocioServicio = relSyS_new(getNewIdRelSyS(),idSocio,idServicio,REL_SOCIO_SERVICIO_ESTADO_ACTIVO);
-    al_add(listaRelSyS,auxRelSocioServicio);
-    dm_saveAllRelSocioServicio(listaRelSyS);*/
+
+    if(auxRelSocioServicio != NULL)
+    {
+        auxRelSocioServicio = relSyS_new(getNewIdRelSyS(),idSocio,idServicio,REL_SOCIO_SERVICIO_ESTADO_ACTIVO);
+        al_add(nominaRelSyS,auxRelSocioServicio);
+        dm_saveAllRelSocioServicio(nominaRelSyS);
+        retorno = 0;
+    }
+    return retorno;
 }
 
-int cont_bajaRelacionSocioServicio (int id)
+int cont_bajaRelSocioServicio (int id)
 {
     RelSocioServicio* auxRelSocioServicio;
-    auxRelSocioServicio = relSyS_findById(listaRelSyS,id);
+    auxRelSocioServicio = relSyS_findById(nominaRelSyS,id);
     if(auxRelSocioServicio!=NULL)
     {
         relSyS_setEstado(auxRelSocioServicio,REL_SOCIO_SERVICIO_ESTADO_INACTIVO);
-        dm_saveAllRelSocioServicio(listaRelSyS);
+        dm_saveAllRelSocioServicio(nominaRelSyS);
     }
 
     return 0;
 }
 
-int cont_listarRelacionSocioServicio ()
+int cont_listarRelSocioServicio ()
 {
-    vista_mostrarRelacionSocioServicio(listaRelSyS);
+    vista_mostrarRelacionSocioServicio(nominaRelSyS);
     return 0;
 }
 
+int cont_existeRelSocioServicio (int id)
+{
+    int retorno = -1;
+    RelSocioServicio* auxRelSocioServicio = relSyS_findById(nominaRelSyS,id);
+
+    if (auxRelSocioServicio != NULL && relSyS_getEstado(auxRelSocioServicio) == REL_SOCIO_SERVICIO_ESTADO_ACTIVO)
+    {
+        retorno = 0;
+    }
+    return retorno;
+}
+
+int cont_existeRelSocioServicioRepetida (int idSocio,int idServicio)
+{
+    int retorno = -1;
+    int i;
+    RelSocioServicio* auxRelSocioServicio;
+    for(i=0; i<al_len(nominaRelSyS); i++)
+    {
+        auxRelSocioServicio=al_get(nominaRelSyS,i);
+        if(auxRelSocioServicio->estado==REL_SOCIO_SERVICIO_ESTADO_ACTIVO && auxRelSocioServicio->idServicio == idServicio && auxRelSocioServicio->idSocio == idSocio)
+        {
+            retorno = 0;
+            break;
+        }
+    }
+    return retorno;
+}
 
 static int getNewIdRelSyS()
 {

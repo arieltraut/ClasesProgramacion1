@@ -6,6 +6,7 @@
 #include "Servicios.h"
 #include "RelSocioServicio.h"
 #include "DataManager.h"
+#include "Validaciones.h"
 
 int dm_saveAll(ArrayList* pArraySocios)
 {
@@ -21,7 +22,6 @@ int dm_saveAll(ArrayList* pArraySocios)
             fwrite(pSocio,sizeof(Socio),1,pArchivoSocios);
             retorno=0;
         }
-
     }
     fclose(pArchivoSocios);
     return retorno;
@@ -148,6 +148,53 @@ int dm_readAllRelSocioServicio(ArrayList* pArrayRelSocioServicio)
             }
         }while(!feof(pArchivoRelSocioServicio));
         fclose(pArchivoRelSocioServicio);
+    }
+    return retorno;
+}
+
+
+
+/////////////////////////////////////////////////////LEER DESDE TEXTO EN VEZ DE BINARIO
+
+int dm_parserSocio(ArrayList* pArraySocios)
+{
+    FILE *pFile;
+    Socio* pSocio;
+    int maxId=0, retorno;
+
+    char id[50],name[50],lastName[50],dni[50],estado[50];
+
+    pFile = fopen(ARCHIVO_SOCIOS,"r");
+
+    char aux[200];
+    fgets(aux,200,pFile); //leer primer fila
+    //fscanf(pFile,"%[^\n]\n",aux,aux,aux,aux,aux);
+
+    while(!feof(pFile))
+    {
+        fscanf(pFile,"%[^,],%[^,],%[^,],%[^,],%[^\n]\n",id,name,lastName,dni,estado);
+        if (val_getUnsignedIntFromFile(id,0,9999)==0)
+        {
+            if (val_getNombreFromFile(name,50)==0)
+            {
+                if (val_getNombreFromFile(lastName,50)==0)
+                {
+                    if(val_getDniFromFile(dni,50)==0)
+                    {
+                        if(val_getUnsignedIntFromFile(estado,0,1)==0) //ver
+                        {
+                            pSocio = soc_new(name,lastName,dni,atoi(id),atoi(estado));
+                            al_add(pArraySocios,pSocio);
+                            if(pSocio->id>maxId)
+                            {
+                                maxId=pSocio->id;
+                            }
+                            retorno=maxId;
+                        }
+                    }
+                }
+            }
+        }
     }
     return retorno;
 }
